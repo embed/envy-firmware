@@ -1,0 +1,11 @@
+# Firmware secrets
+firmware/src/config.local.h
+firmware/.pio/
+
+# Infra secrets
+infra/.env
+/env
+
+# Editor
+.vscode/
+*.swp
