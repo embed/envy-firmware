@@ -2,7 +2,7 @@
   "title": "Home Environment",
   "uid": "home-environment",
   "schemaVersion": 39,
-  "version": 2,
+  "version": 4,
   "refresh": "30s",
   "timezone": "browser",
   "time": { "from": "now-24h", "to": "now" },
@@ -116,7 +116,7 @@
       },
       "fieldConfig": {
         "defaults": {
-          "unit": "pressurebar",
+          "unit": "hPa",
           "decimals": 1,
           "thresholds": {
             "mode": "absolute",
@@ -129,14 +129,7 @@
           "mappings": [],
           "custom": {}
         },
-        "overrides": [
-          {
-            "matcher": { "id": "byName", "options": "_value" },
-            "properties": [
-              { "id": "unit", "value": "hPa" }
-            ]
-          }
-        ]
+        "overrides": []
       },
       "targets": [
         {
@@ -228,19 +221,14 @@
       },
       "fieldConfig": {
         "defaults": {
-          "unit": "pressurebar",
+          "unit": "hPa",
           "custom": {
             "lineWidth": 2,
             "fillOpacity": 10,
             "spanNulls": false,
             "showPoints": "never"
           },
-          "overrides": [
-            {
-              "matcher": { "id": "byName", "options": "_value" },
-              "properties": [{ "id": "unit", "value": "hPa" }]
-            }
-          ]
+          "overrides": []
         }
       },
       "targets": [
